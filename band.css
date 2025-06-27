@@ -12,6 +12,7 @@ img {
 	max-width: 100% ;
 	width: auto ;
 	height: auto ;
+	
 }
 input, select, button, textarea {
 	max-width: 100% ;
@@ -31,7 +32,7 @@ div#tswsidecol {
 div#tswcontent {
 	float: right ;
 	width: 80% ;
-	color: #000 ;
+	color: #000000 ;
 	background-color: #FF5910 ;
 	
 }

@@ -75,6 +75,20 @@ if (nextGameButton) {
     nextGameButton.addEventListener('click', handleNextGameClick);
 }
 
+// New: Create and add a reset button to the page
+const resetButton = document.createElement('button');
+resetButton.textContent = 'Reset Puzzle';
+resetButton.id = 'reset-button';
+// Basic styling to make it visible and usable
+resetButton.style.position = 'fixed';
+resetButton.style.bottom = '10px';
+resetButton.style.left = '10px';
+resetButton.style.zIndex = '1001'; // Make sure it's on top of other elements
+resetButton.style.padding = '8px 16px';
+resetButton.style.cursor = 'pointer';
+document.body.appendChild(resetButton);
+resetButton.addEventListener('click', resetCurrentBoard);
+
 function updateWordsDisplay() {
     const wordListHTML = boards[currentBoardIndex].words.map(word => foundWords.has(word) ? `<s>${word}</s>` : word).join(", "); // Use currentBoardIndex
     document.getElementById("words").innerHTML = "Words to spell: " + wordListHTML;
@@ -396,6 +410,45 @@ function loadNextBoard() {
     setup_game(boards[currentBoardIndex].cells);
     updateWordsDisplay();
 }
+
+// New function to reset the current game board
+function resetCurrentBoard() {
+    // Reset game state for the current board
+    foundWords.clear();
+    isGameComplete = false;
+    isGameStarted = false; // Reset game started flag (timer will wait for first click)
+
+    // Reset timer display and state
+    clearInterval(timerIntervalId);
+    cancelAnimationFrame(timerAnimationId);
+    const timerBox = document.getElementById('timer-box');
+    if (timerBox) {
+        timerBox.textContent = '00:00';
+        timerBox.classList.remove('finished', 'is-floating');
+        timerBox.style.left = '';
+        timerBox.style.top = '';
+    }
+
+    // Clear background animation and other win effects
+    clearInterval(backgroundIntervalId);
+    document.body.style.backgroundColor = '';
+
+    const bouncingBox = document.getElementById('bouncing-box');
+    if (bouncingBox) {
+        bouncingBox.remove();
+    }
+    hideNextGameButton();
+
+    // Unselect any selected cell
+    if (selected_x >= 0 && selected_y >= 0) {
+        unselect(selected_x, selected_y);
+    }
+
+    // Setup the game board again with the initial state for the current board
+    setup_game(boards[currentBoardIndex].cells);
+    updateWordsDisplay();
+}
+
 // This function needs to be fully implemented to detect when all words are spelled.
 // This function now checks for spelled words, updates the UI, and returns if the game is complete.
 function checkForCompletion() {
