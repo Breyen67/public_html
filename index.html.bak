@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <title>Breyen's WPI Site</title>
+    <link rel="icon" type="image/x-icon" href="images/thumbnail_IMG_4487.jpg">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="generator" content="thesitewizard.com's Layout Wizard 4.0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="tswnavbar.css">
+    <div id="tswcontainer">
+      <div id="tswheader">
+        <!-- start of header section: insert your logo, etc, here -->&nbsp;
+        Breyen's Personal WPI Website</div>
+      <div><br>
+      </div>
+      <div><br>
+      </div>
+      <div><br>
+        <!-- end of header section: insert your logo, etc, above this line --> </div>
+      <div id="tswcontent">
+        <div id="tswcontproper">
+          <!-- start of content column: insert your content here -->
+          <h1 id="work">Welcome To My Website!</h1>
+          My name is Breyen Glen and this is my website.
+          <p>This is the website that I am working on for the WPI&nbsp; Computer
+            Science Launch program. Hopefully I am able&nbsp; to add some cool
+            features to the and make it look super&nbsp; nice! </p>
+          <p><br>
+          </p>
+          <button type="button" onclick="document.getElementById('work').style.color='green'">Click
+            Me!</button>
+          <p><br>
+          </p>
+          <p> </p>
+        </div>
+        <p>The food at the WPI dining hall is very good, the desserts are also
+          very tasty!<br>
+        </p>
+        This is the third HTML website that I have worked on! My first was a
+        website on how to build a gaming PC that I made in 7th grade, and then I
+        made a website called <a href="b00gle.netlify.app">BOOGLE</a> that has
+        chat-rooms in it so that I could talk to my friends in school<br>
+        <p> Check out the About Me section to know more about me! </p>
+        <p>&nbsp;</p>
+        <!-- end of content column: put your content above this line --> </div>
+    </div>
+    <div id="tswsidecol">
+      <div id="tswsideproper">
+        <!-- start of side column: insert your navigation menu, etc, here -->
+        <p><br>
+        </p>
+        <div id="tswcssbuttons">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+          <p><br>
+          </p>
+          <img src="images/thumbnail_IMG_4487.jpg" alt="lowercase letter b as my website logo"
+
+            title="boogle" style="width: 161px; height: 161px;"></div>
+        <div><br>
+        </div>
+        <div><br>
+        </div>
+        <div>&nbsp;</div>
+        <div><br>
+        </div>
+        <div><br>
+          <ul>
+          </ul>
+        </div>
+        <!-- end of side column: put your navigation menu, etc, above this line -->
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="tswfooter">
+      <!-- start of footer section: insert your copyright notice, etc, here -->
+      <p>This is me doing some of the activities that I love!</p>
+      <img src="images/IMG_4372.JPG" alt="me and my favorite ultimate frisbee player brayden hackett"
+
+        title="brut" style="width: 242px; height: 321px;"> <img src="images/DSC02369.jpg"
+
+        alt="my flic of me playing on the br freshman team" title="brbaseball" style="width: 189px; height: 334px;">
+      <img src="images/6345024766894757967.jpg" alt="me and the new directions after our tri m induction concert"
+
+        title="trim" style="width: 406px; height: 226px;"> <img src="images/5%208%2025%20MSCoC%20%28188%20of%20392%29.jpg"
+
+        alt="me and ydlan hitting out last move in our bo staff form" title="kbbs"
+
+        style="width: 404px; height: 266px;"> <img src="images/IMG_4395.jpg" alt="a picture of me and tyler hohl playing trombone at the raynham memorial day parade"
+
+        title="memorial day parade" style="width: 362px; height: 241px;"> </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div>&nbsp;<!-- end of footer section: insert your copyright notice, etc, above this line -->
+    </div>
+  </body>
+</html>

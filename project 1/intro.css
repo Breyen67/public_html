@@ -1,0 +1,16 @@
+body{
+    background-color: pink;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#pagetitle{
+    background-color: red;
+    border-radius: 18px;
+    text-align: center;
+    border: 6px solid #000;
+}
+ .myclass{
+    background-color: aquamarine;
+    border:2px dotted;
+    
+ }

@@ -1,0 +1,146 @@
+/*
+	styles.css
+	
+*/
+body {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #002D72;
+}
+img {
+	max-width: 100% ;
+	width: auto ;
+	height: auto ;
+}
+input, select, button, textarea {
+	max-width: 100% ;
+}
+meter, progress, output {
+	max-width: 100% ;
+}
+div#tswsidecol {
+	float: left ;
+	width: 18% ;
+	color: #000 ;
+	background-color: #FF5910 ;
+	border-radius: 20px;
+	border-color: #2883fb;
+	border: 6px solid #2883fb;
+}
+div#tswcontent {
+	float: right ;
+	width: 80% ;
+	color: #FF5910 ;
+	background-color: #002D72 ;
+	font-size: larger;
+	
+}
+@media only screen and (max-width: 629px) {
+	div#tswsidecol {
+		float: none ;
+		width: 100% ;
+	}
+	div#tswcontent {
+		float: none ;
+		width: 100% ;
+	}
+}
+div#tswcontproper {
+	padding-left: 5px ;
+	padding-right: 5px ;
+}
+div#tswcontainer {
+	color: inherit ;
+	background-color: #002D72 ;
+}
+div#tswsideproper, div#tswothersideproper {
+	padding-left: 10px ;
+	padding-right: 10px ;
+}
+div#tswheader {
+	color: #000 ;
+	background-color: #002D72 ;
+	font-size: 7cap;
+}
+div#tswfooter {
+	color: #000 ;
+	background-color: #002D72 ;
+}
+
+/* colum buttons */
+
+#tswcssbuttons {
+	width: 425px ;
+	max-width: 100% ;
+	text-align: center ;
+	
+}
+#tswcssbuttons ul {
+	margin: 0 ;
+	padding: 0 ;
+	list-style: none ;
+}
+#tswcssbuttons li {
+	margin: 0 ;
+	padding: 0 ;
+	display: block ;
+	list-style: none ;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+	font-size: larger;
+}
+#tswcssbuttons li a {
+	color: #000000 ;
+	background-color: #f04400 ;
+	border: 1px outset #000000 ;
+	text-decoration: none ;
+	display: block ;
+}
+#tswcssbuttons li a:hover {
+	color: #000000 ;
+	background-color: #2883fb ;
+}
+/* ABOUT ME BUTTONS*/
+#tswcsstabs{
+	width: 425px;
+	max-width: 100%;
+	text-align: center;
+	align-items: center;
+
+}
+#tswcsstabs ul {
+	margin: 0 ;
+	padding: 0 ;
+	list-style: none ;
+	display: inline ;	
+	align-items: center;
+
+}
+#tswcsstabs ul li {
+	margin: 0 ;
+	padding: 0 ;
+	display: inline ;
+	text-align: center ;
+	float: left;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	align-items: center;
+	margin-left: 20px;
+	
+}
+#tswcsstabs li a {
+	color: #000000 ;
+	background-color: #2883fb ;
+	border: 1px outset #000000 ;
+	padding: 8px ;
+	text-decoration: none ;
+	display: inline;
+	align-items: center;
+	width: 425px;
+	max-width: 100%;
+
+}
+#tswcsstabs li a:hover {
+	color: #000000 ;
+	background-color: #FF5910 ;
+
+}

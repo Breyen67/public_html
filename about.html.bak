@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="images/thumbnail_IMG_4487.jpg">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="generator" content="thesitewizard.com's Layout Wizard 4.0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="about.css">
+    <link rel="stylesheet" type="text/css" href="tswnavbar.css">
+    <div id="tswcontainer">
+      <div id="tswheader">
+        <!-- start of header section: insert your logo, etc, here -->&nbsp;
+        Breyen's Personal WPI Website</div>
+      <div><br>
+      </div>
+      <div><br>
+      </div>
+      <div><br>
+        <!-- end of header section: insert your logo, etc, above this line --> </div>
+      <div id="tswcontent">
+        <div id="tswcontproper">
+          <!-- start of content column: insert your content here -->
+          <h1>Welcome!</h1>
+          I do tons of stuff from playing Baseball and Ultimate Frisbee to doing
+          Karate to playing the Trombone in band.</div>
+        <div><br>
+        </div>
+        <div><br>
+        </div>
+        <div><br>
+        </div>
+        <div><br>
+        </div>
+        <img src="images/baseball.png" alt="baseball" title="baseball" style="width: 277px; height: 277px;">
+        <img src="images/frisbee.png" alt="frisbee" title="fr9sbee" style="width: 273px; height: 273px;">
+        <img src="images/lkarate.png" alt="karate" title="karate" style="width: 261px; height: 291px;">
+        <img src="images/trombone.png" alt="trombone" title="t0ormbone" style="width: 439px; height: 202px;">
+        <p>&nbsp;</p>
+        <!-- end of content column: put your content above this line --> </div>
+    </div>
+    <div id="tswsidecol">
+      <div id="tswsideproper">
+        <!-- start of side column: insert your navigation menu, etc, here -->
+        <div id="tswcsstabs">
+          <ul>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="karate.html">Karate</a></li>
+            <li><a href="band.html">Band</a></li>
+          </ul>
+        </div>
+        <p><br>
+        </p>
+        <div id="tswcssbuttons">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="project.html">Projects</a></li>
+          </ul>
+          <p><br>
+          </p>
+          <img src="images/thumbnail_IMG_4487.jpg" alt="lowercase letter b as my website logo"
+
+            title="boogle" style="width: 161px; height: 161px;"></div>
+        <div><br>
+        </div>
+        <div><br>
+        </div>
+        <div>&nbsp;</div>
+        <div><br>
+        </div>
+        <div><br>
+          <ul>
+          </ul>
+        </div>
+        <!-- end of side column: put your navigation menu, etc, above this line -->
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="tswfooter">
+      <!-- start of footer section: insert your copyright notice, etc, here -->
+      <p><br>
+      </p>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div>&nbsp;<!-- end of footer section: insert your copyright notice, etc, above this line -->
+    </div>
+    
+  </body>
+</html>

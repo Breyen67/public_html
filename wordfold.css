@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-weight: bold;
+    
+    
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(252, 68, 197);
+    border-radius: 20px;
+    border: 6px solid rgb(231, 82, 82) ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+.cell-holder {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 50%;
+    aspect-ratio: 1/1;
+    gap: 8px;
+    margin-left: 180px;
+    /* The border property below had a syntax error and has been removed. */
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 225, 255);
+    font-size: larger;
+    overflow-wrap: anywhere;
+    border-radius: 20px;
+    border: 6px orange solid;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    animation: float 4s ease-in-out infinite;
+}
+
+.cell.selected {
+    border: yellow solid 8px;
+}
+
+.no-margin {
+    margin: 0 0;
+}
+
+#image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#image-container img {
+    max-width: 200px;
+    max-height: 200px;
+}
+/* Style for found words in the list */
+.found {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Style for the grid cell containing a completed word */
+.found-word {
+    background-color: #a7f3d0; /* A nice light green */
+    transition: background-color 0.3s ease;
+}
+.cell.found {
+    background-color: #a7f3d0; /* A light green color */
+    color: #065f46; /* A dark green text color */
+    border-color: #047857;
+    animation: none; /* Stop floating when found */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2); /* Give it an inset shadow to look "placed" */
+  }
+
+/* Keyframes for the floating animation */
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+/* Keyframes for screen spin animation */
+@keyframes screenSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Class to apply the screen spin animation */
+body.spin-active {
+    animation: screenSpin 1s linear 3; /* 1 second per spin, linear, 3 iterations */
+}
+
+/* Styles for the bouncing box */
+#bouncing-box {
+    position: fixed; /* Position relative to the viewport */
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    z-index: 200; /* Make sure it's on top of confetti and other elements */
+    animation: changeColor 5s infinite linear, spinSlowly 10s infinite linear; /* Combined animations */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    /* Styles for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+@keyframes changeColor {
+    0%   { background-color: #ff6347; } /* Tomato */
+    25%  { background-color: #ffd700; } /* Gold */
+    50%  { background-color: #98fb98; } /* PaleGreen */
+    75%  { background-color: #87cefa; } /* LightSkyBlue */
+    100% { background-color: #ff6347; } /* Back to Tomato */ 
+}
+
+@keyframes spinSlowly {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+  
+
+/*
+	body	
+*/
+body {
+	color: #000;
+}
+img {
+	max-width: 100% ;
+	width: auto ;
+	height: auto ;
+}
+input, select, button, textarea {
+	max-width: 100% ;
+}
+meter, progress, output {
+	max-width: 100% ;
+}
+div#tswsidecol {
+	float: left ;
+	width: 18% ;
+	color: #000 ;
+	background-color: #002D72 ;
+	border-radius: 20px;
+	border-color: #2883fb;
+	border: 6px solid #2883fb;
+    margin-top: 202px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+	animation: float 4s ease-in-out infinite; /* Applies the floating animation */
+}
+div#tswcontent {
+	float: right ;
+	width: 80% ;
+	color: #000 ;
+	
+	
+}
+@media only screen and (max-width: 629px) {
+	div#tswsidecol {
+		float: none ;
+		width: 100% ;
+	}
+	div#tswcontent {
+		float: none ;
+		width: 100% ;
+	}
+}
+div#tswcontproper {
+	padding-left: 5px ;
+	padding-right: 5px ;
+}
+div#tswcontainer {
+	color: inherit ;
+}
+div#tswsideproper, div#tswothersideproper {
+	padding-left: 10px ;
+	padding-right: 10px ;
+}
+div#tswheader {
+	color: #000 ;
+	font-size: 7cap;
+}
+div#tswfooter {
+	color: #000 ;
+	
+}
+
+/* colum buttons */
+
+#tswcssbuttons {
+	width: 425px ;
+	max-width: 100% ;
+	text-align: center ;
+}
+#tswcssbuttons ul {
+	margin: 0 ;
+	padding: 0 ;
+	list-style: none ;
+}
+#tswcssbuttons li {
+	margin: 0 ;
+	padding: 0 ;
+	display: block ;
+	list-style: none ;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+	font-size: larger;
+}
+#tswcssbuttons li a {
+	color: #000000 ;
+	background-color: #2883fb ;
+	border: 1px outset #000000 ;
+	text-decoration: none ;
+	display: block ;
+	border-radius: 10px; /* Rounded edges for buttons */
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
+	animation: float 4s ease-in-out infinite; /* Apply floating animation */
+}
+#tswcssbuttons li a:hover {
+	color: #000000 ;
+	background-color: #FF5910 ;
+}
+
+/* Style for the image inside the sidebar to make it float and have rounded edges */
+div#tswsidecol img {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow for floating effect */
+    animation: float 4s ease-in-out infinite; /* Apply floating animation */
+}
+button{
+	border-radius: 10px;
+	font-size: large;
+	font-weight: bold;
+}
+#timer-box {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  z-index: 99; /* Below confetti but above other elements */
+  user-select: none; /* Prevent text selection */
+  transition: background-color 0.5s ease;
+}
+
+#timer-box.finished {
+  background-color: #28a745; /* A nice green */
+}
+#timer-box {
+  /* Static styles for initial state */
+  width: 120px;
+  height: 60px;
+  margin: 15px auto; /* Center it horizontally with some space */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+  transition: background-color 0.5s ease;
+}
+
+#timer-box.is-floating {
+  /* Styles for when it's floating */
+  position: absolute;
+  z-index: 99;
+  margin: 0; /* Remove auto margin when floating */
+}
+
+#timer-box.finished {
+  background-color: #28a745; /* A nice green */
+}
+
+#next-game-button {
+  /* Position will be controlled by JavaScript when visible */
+  padding: 20px 40px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100; /* Above everything else */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  display: none; /* Hidden by default */
+  transition: background-color 0.3s ease; /* Keep transition for hover color */
+}
+
+#next-game-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+
+#timer-box.is-floating {
+  /* Styles for when it's floating */
+  position: absolute;
+  z-index: 99;
+  margin: 0; /* Remove auto margin when floating */
+}
+
+#timer-box.finished {
+  background-color: #28a745; /* A nice green */
+}

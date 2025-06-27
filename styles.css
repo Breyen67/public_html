@@ -1,0 +1,115 @@
+/*
+	styles.css
+	
+*/
+body {
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #FF5910;
+}
+img {
+	max-width: 100% ;
+	width: auto ;
+	height: auto ;
+}
+input, select, button, textarea {
+	max-width: 100% ;
+}
+meter, progress, output {
+	max-width: 100% ;
+}
+div#tswsidecol {
+	float: left ;
+	width: 18% ;
+	color: #000 ;
+	background-color: #002D72 ;
+	border-radius: 20px;
+	border-color: #2883fb;
+	border: 6px solid #2883fb;
+}
+div#tswcontent {
+	float: right ;
+	width: 80% ;
+	color: #000 ;
+	background-color: #FF5910 ;
+	
+}
+@media only screen and (max-width: 629px) {
+	div#tswsidecol {
+		float: none ;
+		width: 100% ;
+	}
+	div#tswcontent {
+		float: none ;
+		width: 100% ;
+	}
+}
+div#tswcontproper {
+	padding-left: 5px ;
+	padding-right: 5px ;
+}
+div#tswcontainer {
+	color: inherit ;
+	background-color: #FF5910 ;
+}
+div#tswsideproper, div#tswothersideproper {
+	padding-left: 10px ;
+	padding-right: 10px ;
+}
+div#tswheader {
+	color: #000 ;
+	background-color: #FF5910 ;
+	font-size: 7cap;
+}
+div#tswfooter {
+	color: #000 ;
+	background-color: #FF5910 ;
+}
+
+/* colum buttons */
+
+#tswcssbuttons {
+	width: 425px ;
+	max-width: 100% ;
+	text-align: center ;
+}
+#tswcssbuttons ul {
+	margin: 0 ;
+	padding: 0 ;
+	list-style: none ;
+}
+#tswcssbuttons li {
+	margin: 0 ;
+	padding: 0 ;
+	display: block ;
+	list-style: none ;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+	font-size: larger;
+}
+#tswcssbuttons li a {
+	color: #000000 ;
+	background-color: #2883fb ;
+	border: 1px outset #000000 ;
+	text-decoration: none ;
+	display: block ;
+	border-radius: 10px; /* Rounded edges for buttons */
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for floating effect */
+	animation: float 4s ease-in-out infinite; /* Apply floating animation */
+}
+#tswcssbuttons li a:hover {
+	color: #000000 ;
+	background-color: #FF5910 ;
+}
+
+/* Style for the image inside the sidebar to make it float and have rounded edges */
+div#tswsidecol img {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow for floating effect */
+    animation: float 4s ease-in-out infinite; /* Apply floating animation */
+}
+button{
+	border-radius: 10px;
+	font-size: large;
+	font-weight: bold;
+}
+

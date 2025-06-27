@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <title>Breyen's WPI Site</title>
+    <link rel="icon" type="image/x-icon" href="images/thumbnail_IMG_4487.jpg">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="generator" content="thesitewizard.com's Layout Wizard 4.0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="projects.css">
+    <link rel="stylesheet" type="text/css" href="tswnavbar.css">
+    <div id="tswcontainer">
+      <div id="tswheader">
+        <!-- start of header section: insert your logo, etc, here -->&nbsp;
+        Breyen's Personal WPI Website</div>
+      <div><br>
+      </div>
+      <div><br>
+      </div>
+      <div><br>
+        <!-- end of header section: insert your logo, etc, above this line --> </div>
+      <div id="tswcontent">
+        <div id="tswcontproper">
+          <!-- start of content column: insert your content here -->
+          <h1 id="work">Welcome!</h1>
+          <br>
+          <p><br>
+          </p>
+          <button type="button" onclick="document.getElementById('work').style.color='green'">Click
+            Me!</button>
+          <p><br>
+          </p>
+          <p> </p>
+        </div>
+        <br>
+        <p></p>
+        <!-- end of content column: put your content above this line --> </div>
+    </div>
+    <div id="tswsidecol">
+      <div id="tswsideproper">
+        <!-- start of side column: insert your navigation menu, etc, here -->
+        <p><br>
+        </p>
+        <div id="tswcssbuttons">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+          <p><br>
+          </p>
+          <img src="images/thumbnail_IMG_4487.jpg" alt="lowercase letter b as my website logo"
+
+            title="boogle" style="width: 161px; height: 161px;"></div>
+        <div><br>
+        </div>
+        <div><br>
+        </div>
+        <div>;</div>
+        <div><br>
+        </div>
+        <div><br>
+          <ul>
+          </ul>
+        </div>
+        <!-- end of side column: put your navigation menu, etc, above this line -->
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="tswfooter">
+      <!-- start of footer section: insert your copyright notice, etc, here -->
+      <p><br>
+      </p>
+       <br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><br>
+    </div>
+    <div><!-- end of footer section: insert your copyright notice, etc, above this line -->
+    </div>
+  </body>
+</html>
